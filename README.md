@@ -1,7 +1,5 @@
-### Hi there 👋
-
-<!--
-**Pineapple-1/Pineapple-1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Hello, Internet User.👋
+I'm Abdulrehman, a javascript developer
 
 Here are some ideas to get you started:
 
