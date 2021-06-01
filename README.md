@@ -3,7 +3,7 @@
 <div>
  <ul>
   <li>🔭 I’m currently working on <strong>Computer Vision</strong></li>
-  <li>🌱 I’m currently learning <strong>Python<strong></li>
+  <li>🌱 I’m currently learning <strong>Python</strong></li>
   <li>💬 Ask me about <strong>Javascript</strong></li>
   <li>📫 How to reach me: <strong>abdulrehman.ajmal@outlook.com </strong></li>
  </ul>
