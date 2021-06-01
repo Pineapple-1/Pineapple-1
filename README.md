@@ -8,7 +8,7 @@
   <li>💬 Ask me about <strong>Javascript</strong></li>
   <li>📫 How to reach me: <strong>abdulrehman.ajmal@outlook.com </strong></li>
  </ul>
-|
- 
+
+ </div>
 <div><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Pineapple-1&show_icons=true&locale=en&layout=compact" alt="Pineapple" /></div>
 </div>
