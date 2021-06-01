@@ -1,5 +1,5 @@
 <h1 align="center"> Hello, Github User.👋 </h1>
-I'm Abdulrehman, a javascript developer
+<h3 align="center">I'm Abdulrehman, a javascript developer. </h3>
 
 - 🔭 I’m currently working on **Computer Vision**
 - 🌱 I’m currently learning **Python**
