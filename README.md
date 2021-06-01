@@ -2,10 +2,10 @@
 <h3 align="center">I'm Abdulrehman, a javascript developer. </h3>
 <div>
  <ul>
- - 🔭 I’m currently working on **Computer Vision**
-- 🌱 I’m currently learning **Python**
-- 💬 Ask me about **Javascript**
-- 📫 How to reach me: abdulrehman.ajmal@outlook.com 
+  <li>🔭 I’m currently working on **Computer Vision**</li>
+  <li>🌱 I’m currently learning **Python**</li>
+  <li>💬 Ask me about **Javascript**</li>
+  <li>📫 How to reach me: abdulrehman.ajmal@outlook.com </li>
  </ul>
 </div>
 
