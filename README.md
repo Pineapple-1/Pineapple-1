@@ -1,7 +1,7 @@
 <h1 align="center"> Hello, Github User.👋 </h1>
 <h3 align="center">I'm Abdulrehman, a javascript developer. </h3>
-<div>
 <div display="flex">
+<div >
  <ul>
   <li>🔭 I’m currently working on <strong>Computer Vision</strong></li>
   <li>🌱 I’m currently learning <strong>Python</strong></li>
