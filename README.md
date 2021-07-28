@@ -3,7 +3,7 @@
 <h3 align="center">I'm Abdulrehman, a javascript developer. </h3>
 
 
- <ul align="right">
+ <ul>
   <li>🔭 I’m currently working on <strong>Computer Vision</strong></li>
   <li>🌱 I’m currently learning <strong>Python</strong></li>
   <li>💬 Ask me about <strong>React</strong></li>
