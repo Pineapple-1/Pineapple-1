@@ -1,6 +1,5 @@
-<h1 align="center"> Hello, Github User.👋 </h1>
+<h1 align="center"> Hi, I'm Abdulrehman.👋 </h1>
 
-<h3 align="center">I'm Abdulrehman, a javascript developer. </h3>
 
 
  <ul>
