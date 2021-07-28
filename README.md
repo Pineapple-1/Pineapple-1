@@ -3,7 +3,7 @@
 <h3 align="center">I'm Abdulrehman, a javascript developer. </h3>
 
 
- <ul>
+ <ul align="right">
   <li>🔭 I’m currently working on <strong>Computer Vision</strong></li>
   <li>🌱 I’m currently learning <strong>Python</strong></li>
   <li>💬 Ask me about <strong>React</strong></li>
@@ -11,5 +11,5 @@
  </ul>
 
 
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Pineapple-1&show_icons=true&locale=en&layout=compact" alt="Pineapple" /></p>
-<center><img align="center" src="https://media.giphy.com/media/IpeYSEZshTefe/giphy.gif" alt="Pineapple" /></center>
+<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Pineapple-1&show_icons=true&locale=en&layout=compact" alt="Pineapple" />
+<img align="right" width="100" height="100" src="https://media.giphy.com/media/IpeYSEZshTefe/giphy.gif" alt="Pineapple" />
