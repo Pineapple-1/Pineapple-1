@@ -11,5 +11,5 @@
  </ul>
 
 
-<center><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Pineapple-1&show_icons=true&locale=en&layout=compact" alt="Pineapple" /></center>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Pineapple-1&show_icons=true&locale=en&layout=compact" alt="Pineapple" /></p>
 <center><img align="center" src="https://media.giphy.com/media/IpeYSEZshTefe/giphy.gif" alt="Pineapple" /></center>
