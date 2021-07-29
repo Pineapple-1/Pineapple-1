@@ -6,5 +6,8 @@
   <li>📫 How to reach me: <strong>abdulrehman.ajmal@outlook.com </strong></li>
  </ul>
 
+
+### ⏲ What I'm Trying To Do 😭
+
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
