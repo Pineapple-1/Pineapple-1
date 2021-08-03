@@ -7,7 +7,7 @@
  </ul>
 
 
-### ⏲ What I'm Trying To Do 😭
+### ⏲ What I'm Trying To Do this week 😭
 
 <!--START_SECTION:waka-->
 ```text
