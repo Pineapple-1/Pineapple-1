@@ -1,4 +1,4 @@
-<h1 align="center"> Hi 👋, I'm Abdulrehman.</h1>
+<h1 align="center"> Hi 👋, I'm Abdulrehman</h1>
  <ul>
   <li>🔭 I’m currently working on <strong>Django Backend</strong></li>
   <li>🌱 I’m currently learning <strong>Django rest framework (TDD)</strong></li>
