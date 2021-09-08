@@ -2,8 +2,8 @@
 
 - 🔭 I’m currently working on Django Backend.
 - 🌱 I’m currently learning everything 🤣.
-- 💬 Ask me about <strong>React or anything space related.
-- 📫 How to reach me: <strong>abdulrehman.ajmal@outlook.com.
+- 💬 Ask me about <strong>React or anything space related.</strong>
+- 📫 How to reach me: <strong>abdulrehman.ajmal@outlook.com.</strong>
 
 
 ### Languages and Tools:
