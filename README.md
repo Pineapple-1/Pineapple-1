@@ -18,3 +18,6 @@ Text     5 mins          ⣄⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 Other    2 mins          ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   00.26 % 
 ```
 <!--END_SECTION:waka-->
+---
+[![Abdulrehman's GitHub stats](https://github-readme-stats.vercel.app/api?username=Pineapple-1)](https://github.com/anuraghazra/github-readme-stats)
+
