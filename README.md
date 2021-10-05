@@ -33,9 +33,7 @@
 
 <!--START_SECTION:waka-->
 ```text
-JavaScript   43 mins         ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   54.67 % 
-CSS          23 mins         ⣿⣿⣿⣿⣿⣿⣿⣤⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   29.55 % 
-Markdown     12 mins         ⣿⣿⣿⣿⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   15.78 % 
+No Activity tracked this Week
 ```
 <!--END_SECTION:waka-->
 
