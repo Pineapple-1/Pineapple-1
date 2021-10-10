@@ -1,6 +1,6 @@
 <h1 align="center"> Hi 👋, I'm Abdulrehman.</h1>
 
-- 🔭 I’m currently working on React Native
+- 🔭 I’m currently working on React Native.
 - 🌱 I’m currently learning everything 🤣.
 - 💬 Ask me about <strong>React or anything space related.</strong>
 - 📫 How to reach me: <strong>abdulrehman.ajmal@outlook.com</strong>
