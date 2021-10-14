@@ -1,7 +1,7 @@
 <h1 align="center"> Hi 👋, I'm Abdulrehman.</h1>
 
-- 🔭 I’m currently working on android dev.
-- 🌱 I’m currently learning everything 🤣.
+- 🔭 I’m currently working on <strong>android dev.</strong>
+- 🌱 I’m currently learning <strong>everything 🤣.</strong>
 - 💬 Ask me about <strong>React or anything space related.</strong>
 - 📫 How to reach me: <strong>abdulrehman.ajmal@outlook.com</strong>
 
