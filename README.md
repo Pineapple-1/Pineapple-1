@@ -33,8 +33,7 @@
 
 <!--START_SECTION:waka-->
 ```text
-C#       3 hrs 30 mins   ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣤⣀⣀   89.05 % 
-Java     25 mins         ⣿⣿⣶⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   10.91 % 
+No Activity tracked this Week
 ```
 <!--END_SECTION:waka-->
 
