@@ -34,7 +34,8 @@
 <!--START_SECTION:waka-->
 
 ```text
-No activity tracked
+JavaScript   54 mins         ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣀⣀⣀⣀⣀⣀⣀⣀   68.10 %
+Python       25 mins         ⣿⣿⣿⣿⣿⣿⣿⣿⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   31.90 %
 ```
 
 <!--END_SECTION:waka-->
