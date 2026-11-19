@@ -1,41 +1,45 @@
-<h1 align="center"> Hi 👋, I'm Abdulrehman.</h1>
+<h1 align="center">Hi 👋, I'm Abdulrehman</h1>
 
-- 🔭 I’m currently working on <strong>JAVASCRIPT</strong>
-- 🌱 I’m currently learning <strong>Everything 🤣.</strong>
-- 💬 Ask me about <strong>React or anything space related.</strong>
-- 📫 How to reach me: <strong>abdulrehman.ajmal@outlook.com</strong>
+<p align="center">
+  Full-stack developer from Pakistan 🇵🇰 — React on the front, Python on the back, AI in the middle,<br/>
+  and a home server humming in the corner.
+</p>
 
+<p align="center">
+  <a href="https://slowserver.net"><img alt="slowserver.net" src="https://img.shields.io/badge/homelab-slowserver.net-f59e0b?style=for-the-badge" /></a>
+  <a href="mailto:abdulrehman.ajmal@outlook.com"><img alt="Email" src="https://img.shields.io/badge/email-say%20hi-0078D4?style=for-the-badge" /></a>
+</p>
 
-### Languages and Tools:
+## 🚀 What I do
 
-<img align="left" alt="HTML5" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
-<img align="left" alt="CSS3" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
-<img align="left" alt="JavaScript" width="32px"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
-<img align="left" alt="React" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
-<img align="left" alt="Node.js" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
+- ⚛️ **React** — building web frontends with React, JavaScript and TypeScript
+- 🐍 **Python** — APIs and backends with Django and FastAPI
+- 🤖 **AI** — building AI-powered apps and tooling
+- 🟨 **JavaScript** — everywhere, all the time
 
-<img align="left" width="32px" src="https://github.com/get-icon/geticon/raw/master/icons/python.svg" alt="Python" />
-<img align="left" width="32px" src="https://github.com/get-icon/geticon/raw/master/icons/django.svg" alt="Django" />
-<img align="left" width="32px" src="https://github.com/get-icon/geticon/raw/master/icons/material-ui.svg" alt="Material UI"  />
-<img align="left" width="32px" src="https://github.com/get-icon/geticon/raw/master/icons/ant-design.svg" alt="Ant Design" />
-<img align="left" width="32px" src="https://github.com/get-icon/geticon/raw/master/icons/bootstrap.svg" alt="Bootstrap"  />
+## 🏠 Homelab — [slowserver.net](https://slowserver.net)
 
-<img align="left" alt="SQL" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" />
-<img align="left" alt="MySQL" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" />
-<img align="left" alt="MongoDB" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
-<img align="left" width="32px" src="https://github.com/get-icon/geticon/raw/master/icons/postgresql.svg" alt="PostgreSQL" />
-<img align="left" alt="GitHub" width="32px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
-<br/>
+My hobby is networking gear and self-hosting. I run my own home server, **slowserver**, and tinker with it far more than I should.
 
+- 🖥️ A tiny mini PC (12th-gen Intel i5, 32 GB RAM) running **Ubuntu Server**
+- 📦 Everything is containerised with **Docker**, deployed through **Dokploy** (self-hosted PaaS)
+- 🔀 **Traefik** reverse proxy with automatic HTTPS for every service
+- 🎬 Self-hosted media, file storage, S3-compatible object storage, and my own apps
+- 🌐 Routers, switches, DNS, firewalls — if it has blinking lights, I want to configure it
 
-### ⏲ What I'm Trying To Do This Week. 😭
+## 🛠️ Languages and Tools
 
-<!--START_SECTION:waka-->
+<p>
+  <img src="https://skillicons.dev/icons?i=react,js,ts,html,css,nodejs,mui,bootstrap" alt="Frontend" />
+</p>
+<p>
+  <img src="https://skillicons.dev/icons?i=python,django,fastapi,postgres,mysql,mongodb,redis" alt="Backend" />
+</p>
+<p>
+  <img src="https://skillicons.dev/icons?i=docker,linux,ubuntu,git,github" alt="Infra" />
+</p>
 
-```text
-No activity tracked
-```
+## 💬 Get in touch
 
-<!--END_SECTION:waka-->
-
-
+- 💬 Ask me about **React, Python, AI, homelabs, or anything space related**
+- 📫 Reach me at **abdulrehman.ajmal@outlook.com**
