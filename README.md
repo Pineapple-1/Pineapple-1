@@ -1,117 +1,121 @@
-<img src="assets/banner.svg" width="100%" alt="Abdulrehman Ajmal. Ships products, runs a homelab, reads about rockets." />
+<img src="assets/banner.svg" width="100%" alt="Glowing diagonal strokes on a black ground, like a radio waterfall plot. A row of identical rising chirps, then two falling ones, then two rows of chirps that each start at a different height: one chirp for every letter of the name Abdulrehman Ajmal." />
 
-I'm a full-stack engineer in Pakistan. I work two engineering jobs, go to the gym after them, and then come home to a mini PC I named slowserver.
+***Self-portrait as a LoRa packet***, 2026<br>
+<sub>Chirps on a dark ground. The top row is the preamble a LoRa radio sends before it speaks. The two rows under it are my name, one chirp per letter: the later the letter in the alphabet, the higher the chirp starts. The <a href="scripts/build_banner.py">script that draws it</a> is in this repo.</sub>
 
-I like building things a person can hold: an app on a phone, a dashboard a clinic opens every morning, a voice that picks up when you call a number. I also like knowing how things work a few layers below where I'm paid to work, which is why the reading list at the bottom runs from transistors to rockets.
+---
 
-Almost all of this code lives in private repositories, so here are the pictures instead.
+I'm Abdulrehman. This is where I hang the things I make.
 
-## Things I've shipped
+Most of the code is in private collections, so what's on the walls is pictures. Walk around.
 
-### Clinical reporting and lab management platform
-
-Two years and 900+ of my commits on a multi-site platform for respiratory and sleep labs. It follows a patient from referral and waitlist through booking, rostering and testing to the finished clinical report, then delivers the result to the referring doctor over HL7. I also worked on the accreditation module, which tracks documents, training, audits and corrective actions. The client's name is withheld at their request.
-
-<sub>React · TypeScript · MobX · Apollo GraphQL · AG Grid · Flask · Hasura · PostgreSQL</sub>
+## Room 1: Commissions
 
 <img src="assets/work/clinical-platform-dashboard.jpg" width="100%" alt="Clinic dashboard showing appointments this week, waiting lists, lab capacity, lab utilisation and a 30-day clinic performance chart." />
 
 <img src="assets/work/clinical-platform-scheduling-accreditation.jpg" width="100%" alt="Two screens: a sleep lab booking view with rostering per bed, and an accreditation overview with compliance scores and an events calendar." />
 
-### [siParadigm](https://carteblanche.tech/case-studies/siparadigm)
+**Clinical reporting and lab management platform**, 2024 to now<br>
+<sub>React, TypeScript, MobX, Apollo GraphQL, AG Grid, Flask, Hasura, PostgreSQL</sub>
 
-An iOS and Android app for a molecular diagnostics lab. Doctors track cases and download reports, order sample kits and follow the FedEx delivery. The company had shelved two earlier attempts; this one was in production in two months. No patient data is stored on the phone.
+A platform for respiratory and sleep labs. It follows a patient from referral and waitlist through booking, rostering and testing to the finished clinical report, and delivers the result to the referring doctor. The client's name is left off the label at their request.
 
-<sub>React · TypeScript · Ionic · Capacitor · React Aria · Tailwind</sub>
+<br>
 
 <img src="assets/work/siparadigm-diagnostics-app.jpg" width="100%" alt="Two phone screens from the siParadigm app: a list of diagnostic cases with their report status, and a kit order being tracked through delivery." />
 
-### [Nowii Rewards](https://carteblanche.tech/case-studies/nowii)
+**[siParadigm](https://carteblanche.tech/case-studies/siparadigm)**, 2024 to 2026<br>
+<sub>React, TypeScript, Ionic, Capacitor, React Aria, Tailwind</sub>
 
-A rewards app for a London startup that pays commuters in tokens for travelling green. You earn tokens, climb tiers and spend them on discounts with partner merchants, and the app shows the CO₂ you saved along the way. The MVP launched in three months.
+An iOS and Android app for a molecular diagnostics lab. Doctors follow their cases, download reports, order sample kits and watch the courier bring them.
 
-<sub>React · Ionic · TypeScript · Tailwind · Django · PostgreSQL · Celery · AWS</sub>
+<br>
 
 <img src="assets/work/nowii-rewards-app.jpg" width="100%" alt="A hand holding a phone showing the Nowii home screen: 227 travel tokens, a Bronze tier, and discount offers from partner merchants." />
 
-### [Public Editor](https://carteblanche.tech/case-studies/public-editor)
+**[Nowii Rewards](https://carteblanche.tech/case-studies/nowii)**, 2023 to 2024<br>
+<sub>React, Ionic, TypeScript, Tailwind, Django, PostgreSQL, Celery, AWS</sub>
 
-A platform that scores how credible a news article is. Twelve Claude agents on Amazon Bedrock read each article for sourcing, reasoning, language and evidence, so an analysis that took days now takes minutes. It also has a training game for human annotators and a browser extension for annotating articles in place.
+An app for a London startup that pays commuters in tokens for travelling green. You earn tokens, climb tiers and spend them on discounts with partner merchants.
 
-<sub>React · Next.js · TypeScript · D3 · Django · PostgreSQL · Amazon Bedrock · Docker</sub>
+<br>
 
 <img src="assets/work/public-editor-ai-annotation.jpg" width="100%" alt="Two Public Editor screens: an annotation training task where a reader labels quoted sources in an article, and the public article explorer showing a credibility score of 82." />
 
-### [HireCinch](https://carteblanche.tech/case-studies/hirecinch)
+**[Public Editor](https://carteblanche.tech/case-studies/public-editor)**, 2024 to 2025<br>
+<sub>React, Next.js, TypeScript, D3, Django, PostgreSQL, Amazon Bedrock, Docker</sub>
 
-A multi-tenant applicant tracking system for startups and small companies. It parses and screens resumes with AI, and gives each team its own hiring pipeline, application forms, scorecards, interview scheduling and email. The MVP was live in eight weeks.
+A tool that reads a news article and tells you how far to trust it. Twelve AI agents go through it for sourcing, reasoning, language and evidence. There is also a game that trains people to do the same job.
 
-<sub>Next.js · React · TypeScript · Tailwind · Django · PostgreSQL · Celery · Redis · AWS</sub>
+<br>
 
 <img src="assets/work/hirecinch-ats.jpg" width="100%" alt="Two HireCinch screens: a multi-step form for creating a job posting, and a candidate profile with an interview scorecard." />
 
-## Agents that pick up the phone
+**[HireCinch](https://carteblanche.tech/case-studies/hirecinch)**, 2022 to 2023<br>
+<sub>Next.js, React, TypeScript, Tailwind, Django, PostgreSQL, Celery, Redis, AWS</sub>
 
-At my second job, a small team and I build the assistant for a property developer's customers. More than 500 of the commits are mine.
+An applicant tracking system for small companies: hiring pipelines, application forms, scorecards, and AI that reads the resumes first.
 
-**The voice agent.** Call the number and an agent answers, built on Twilio and ElevenLabs. If you're a new caller it talks you through the projects, notes what you're looking for, creates the lead in Salesforce and books a consultation. If you're an existing customer, a different agent picks up: it can tell you what is paid and what is due on your unit, open a support case, or email you a document. ElevenLabs runs the conversation, and every action is a webhook tool that calls back into our Django backend, so the business rules live in one place.
+## Room 2: Things that talk
 
-**The WhatsApp agent.** The same assistant started life on WhatsApp, where it does the same job in text: answers questions, captures leads, books consultations and handles support, with message templates and buttons managed per tenant.
+There is nothing to hang in this room. The pieces are voices.
 
-Under both sits a multi-tenant Django API that keeps a read-only mirror of the client's Salesforce data for the agents to answer from.
+```mermaid
+flowchart LR
+    A([Someone calls]) --> B[Twilio]
+    B --> C[Voice agent<br/>ElevenLabs]
+    C -- tools --> D[Django backend]
+    D --> E[(Mirror of<br/>Salesforce)]
+    F([Someone texts<br/>on WhatsApp]) --> D
+```
 
-## slowserver
+**Voice agent**, 2025 to now<br>
+<sub>Twilio, ElevenLabs, Django, Salesforce</sub>
+
+Call a property developer's number and an agent answers. A new caller hears about the projects and can book a consultation. An existing customer gets a different agent, one that knows what they have paid and what is due, and can open a support case or email a document. Made with a small team.
+
+**WhatsApp agent**, 2025 to now<br>
+<sub>Twilio, WhatsApp, Django, Salesforce</sub>
+
+The same assistant, in text. It came first, and the voice grew out of it.
+
+## Room 3: The machine at home
 
 <img src="assets/work/slowserver-homelab-dashboard.jpg" width="100%" alt="The slowserver.net dashboard: an HP Elite Mini 600 G9 online for 28 days with nine healthy services, network speed, weather in Lahore and a feed from r/homelab." />
 
-[slowserver.net](https://slowserver.net) is an HP Elite Mini 600 G9 at home that works as my own small cloud, and I tinker with it far more than I should.
+**[slowserver.net](https://slowserver.net)**, ongoing<br>
+<sub>HP Elite Mini 600 G9, Ubuntu Server, Docker Swarm, Dokploy, Traefik</sub>
 
-| Layer | What's there |
-| :--- | :--- |
-| Hardware | Intel i5-12500T, 32 GB RAM, running on the house battery backup |
-| System | Ubuntu Server, Docker Swarm |
-| Deploys | Dokploy, a self-hosted PaaS. I moved the whole stack over from CapRover and nginx |
-| Ingress | Traefik with automatic HTTPS on every subdomain |
-| Media | Jellyfin with hardware transcoding on the Intel iGPU, AV1 included |
-| Also running | S3-compatible object storage, a file manager, uptime monitoring, and my own apps |
+A mini PC in my house that works as my own small cloud. It serves films, stores files, hosts my apps and gets HTTPS for every one of them on its own. It runs on the house battery when the power goes. I have also run my own mail server. I tinker with all of it far more than I should.
 
-I've set up my own mail server as well. Everything is written down in a wiki in git, because the person most likely to break this server is me in six months.
+## The sketchbook
 
-## Smaller things
+Smaller things, some unfinished.
 
-- **Tabiya** is a free chess opening trainer I'm building for players rated 600 to 1200. It teaches ten courses with spaced repetition, and Stockfish audits every line to catch any taught move that loses ground. Not published yet.
-- **[Voklizer](https://github.com/Pineapple-1/voklizer)** is a voice-message app for iOS and Android, built with Ionic, Capacitor, Firebase and Stripe.
-- **Open source:** a handful of pull requests to [eraeco/pay](https://github.com/eraeco/pay), a peer-to-peer check payment system.
-- **Old experiments** are still here from when I was learning computer vision: an [invisibility cloak](https://github.com/Pineapple-1/Invisiblity-cloak) in OpenCV, and live [pose, face and hand tracking](https://github.com/Pineapple-1/holistics).
+- **Tabiya.** A free chess opening trainer for players rated 600 to 1200. It teaches ten openings, and a chess engine checks every line it teaches. Not published yet.
+- **[Voklizer](https://github.com/Pineapple-1/voklizer).** A voice-message app for iOS and Android.
+- **[Invisibility cloak](https://github.com/Pineapple-1/Invisiblity-cloak).** Hold up a cloth and disappear behind it, with a webcam and OpenCV. From when I was learning computer vision.
+- **[Holistics](https://github.com/Pineapple-1/holistics).** Live tracking of a body, a face and two hands. Same period.
 
-## Teaching
+## The reading room
 
-I mentor [Wali](https://github.com/WaliShykh), a younger developer who is learning to build software. Explaining something to him is the fastest way I know to find out whether I understand it.
+What I read about when nobody is paying me.
 
-## What I read about when nobody is paying me
-
-- **Radio and mesh networks.** LoRa, Meshtastic, and how far a few milliwatts can carry a message. I want to build my own slightly piratical off-grid network.
-- **Running AI at home.** Deploying models locally, how people cluster Mac Studios into one machine, and what NVLink does for stacked GPUs.
-- **How chips are made.** EUV lithography, and the nanoimprint machines Canon is building to get around it. Further down, how a FET transistor actually switches.
-- **Rockets.** SpaceX and Starship, and at the other end of the scale, how hobby rockets work.
+- **Radio and mesh networks.** LoRa and Meshtastic, which is where the picture at the top comes from. I want to build my own slightly piratical off-grid network.
+- **Running AI at home.** Deploying models locally, how people stack Mac Studios into one machine, and what NVLink does for stacked GPUs.
+- **How chips are made.** EUV lithography, the nanoimprint machines Canon is building to get around it, and further down, how a FET actually switches.
+- **Rockets.** SpaceX and Starship at one end, hobby rockets at the other.
 - **Drones,** and most other things that fly.
-- **Films.** I've watched a lot of them, and I like telling stories.
+- **Films.** I have watched a lot of them, and I like telling stories.
 
-## What I work with
+## About the artist
 
-| Area | Tools |
-| :--- | :--- |
-| Frontend | React, Next.js, TypeScript, Tailwind, React Aria, Ionic and Capacitor |
-| Backend | Python, Django and DRF, FastAPI, Flask, Hasura, GraphQL |
-| Data | PostgreSQL and SQL, Redis, Celery |
-| AI | LLM agents and pipelines with Claude on Bedrock and OpenAI, voice agents with Twilio and ElevenLabs |
-| Infrastructure | Docker, Linux, Traefik, Dokploy, AWS, CI/CD |
+Abdulrehman Ajmal is a full-stack engineer in Pakistan. He works two jobs and goes to the gym after them. He teaches [Wali](https://github.com/WaliShykh), a younger developer who is learning to build software.
 
-## Get in touch
+**Materials:** React, Next.js, TypeScript, Tailwind, Ionic · Python, Django, FastAPI, Flask, Hasura, GraphQL · PostgreSQL, SQL, Redis · LLM agents, Claude on Bedrock, OpenAI, ElevenLabs, Twilio · Docker, Linux, Traefik, Dokploy, AWS
 
-Ask me about React, Python, agents, homelabs, or anything that leaves the ground.
+## Enquiries
 
 - Email: [abdulrehman.ajmal@outlook.com](mailto:abdulrehman.ajmal@outlook.com)
 - LinkedIn: [abdulrehman-ajmal](https://www.linkedin.com/in/abdulrehman-ajmal-a270891a4/)
 - X: [@notabdulrehman](https://x.com/notabdulrehman)
-- Homelab: [slowserver.net](https://slowserver.net)
