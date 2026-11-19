@@ -8,7 +8,7 @@ Text is converted to outlines so the image renders the same everywhere
     python scripts/build_rack.py
 
 Fonts (Barlow, SIL Open Font License) are downloaded to scripts/.fonts on
-first run. To change what the panel says, edit NAME, ROLE, HOST and GROUPS.
+first run. To change what the drawing says, edit NAME, ROLE, HOST and GROUPS.
 """
 from pathlib import Path
 from urllib.request import urlretrieve
@@ -20,13 +20,13 @@ from fontTools.ttLib import TTFont
 
 # ---------------------------------------------------------------- content
 NAME = "Abdulrehman Ajmal"
-ROLE = "React front, Python back, AI in the middle"
+ROLE = "Ships products, runs a homelab, reads about rockets"
 HOST = "slowserver.net"
-HOST_SPEC = "12th-gen i5, 32 GB, Ubuntu Server"
+HOST_SPEC = "32 GB, Ubuntu Server"
 GROUPS = [
-    ("frontend", ["React", "TypeScript", "JavaScript", "MUI"]),
-    ("backend", ["Python", "Django", "FastAPI", "Node.js"]),
-    ("data", ["PostgreSQL", "MySQL", "MongoDB", "Redis"]),
+    ("frontend", ["React", "TypeScript", "Next.js", "Ionic"]),
+    ("backend", ["Python", "Django", "FastAPI", "Hasura"]),
+    ("data and ai", ["PostgreSQL", "GraphQL", "Redis", "LLM agents"]),
     ("infrastructure", ["Docker", "Linux", "Traefik", "Dokploy"]),
 ]
 # Ports whose amber activity light stays dark (1-based port numbers).
@@ -47,10 +47,15 @@ GREEN = "#74E08F"
 AMBER = "#FFB02E"
 AMBER_OFF = "#5E4B20"
 STEEL = "#B9C6C6"
+RECESS = "#0C1F22"        # the dark inside the shelf opening
+PC_EDGE = "#3C4347"       # mini PC outline and port bezels
+PC_HOLE = "#050607"       # mesh holes, port cavities
+PC_PRINT = "#8D979A"      # small print on the mini PC
+POWER = "#DDF5EE"         # power light
 
-W, H = 1000, 386
+W, H = 1000, 392
 EAR = 46
-U1_H = 156
+U1_H = 162
 SEAM = 4
 U2_Y = U1_H + SEAM
 
@@ -142,6 +147,64 @@ def tape(x, y, w, h, angle, inner):
     )
 
 
+DEFS = (
+    "<defs>"
+    f'<linearGradient id="ch" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#32626A"/><stop offset="1" stop-color="{CHASSIS}"/></linearGradient>'
+    '<linearGradient id="lid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6A7378"/><stop offset="1" stop-color="#30363A"/></linearGradient>'
+    '<linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222629"/><stop offset="1" stop-color="#141618"/></linearGradient>'
+    '<linearGradient id="silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF2F2"/><stop offset="1" stop-color="#98A3A6"/></linearGradient>'
+    f'<pattern id="mesh" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="2.75" cy="2.75" r="2.5" fill="{PC_HOLE}"/><circle cx="8.25" cy="8.25" r="2.5" fill="{PC_HOLE}"/></pattern>'
+    "</defs>"
+)
+
+
+PC_W, PC_H = 866, 166  # drawn at this size, then scaled into its bay
+
+
+def usb_a(x, cy):
+    return (
+        rect(x, cy - 10, 46, 20, PC_HOLE, 2, f' stroke="{PC_EDGE}" stroke-width="2"')
+        + rect(x + 6, cy - 1, 34, 6, "#30363A", 1)
+    )
+
+
+def mini_pc(x, y, width):
+    """The home server: a small black desktop seen from the front.
+
+    Vent mesh on the left; headset jack, USB-C, two USB-A, the disk light
+    and the power button on the right. `width` sets its drawn size.
+    """
+    w, h, lid = PC_W, PC_H, 11
+    k = width / w
+    o = [f'<g transform="translate({num(x)} {num(y)}) scale({k:.4f})">']
+    for fx in (80, w - 80 - 60):
+        o.append(rect(fx, h - 2, 60, 10, "#070808", 3))
+    o.append(f'<path fill="url(#lid)" d="M12 0h{w - 24}a12 12 0 0 1 12 12v6h-{w}v-6a12 12 0 0 1 12-12z"/>')
+    o.append(f'<path fill="url(#face)" d="M0 {lid}h{w}v{h - lid - 12}a12 12 0 0 1-12 12h-{w - 24}a12 12 0 0 1-12-12z"/>')
+    o.append(rect(0, lid, w, 2, "#000", 0, ' opacity=".5"'))
+    mx, my, mw, mh = 20, lid + 18, 496, h - lid - 36
+    o.append(rect(mx, my, mw, mh, "#2D3336", 8))
+    o.append(rect(mx, my, mw, mh, "url(#mesh)", 8))
+
+    px, cy = mx + mw + 36, lid + (h - lid) / 2
+    o.append(f'<circle cx="{px + 10}" cy="{cy}" r="10" fill="{PC_HOLE}" stroke="{PC_EDGE}" stroke-width="2"/>')
+    o.append(f'<circle cx="{px + 10}" cy="{cy}" r="3.6" fill="#2A2F32"/>')
+    o.append(rect(px + 38, cy - 6.5, 32, 13, PC_HOLE, 6.5, f' stroke="{PC_EDGE}" stroke-width="2"'))
+    o.append(rect(px + 46, cy - 1.5, 16, 3, "#30363A", 1.5))
+    o.append(usb_a(px + 88, cy))
+    o.append(usb_a(px + 148, cy))
+    bx = w - 50
+    o.append(rect(bx - 50, cy - 3, 13, 6, AMBER_OFF, 2))
+    o.append(rect(bx - 50, cy - 3, 13, 6, AMBER, 2, ' class="act b3"'))
+    o.append(f'<circle cx="{bx}" cy="{cy}" r="28" fill="{POWER}" opacity=".08"/>')
+    o.append(f'<circle cx="{bx}" cy="{cy}" r="22" fill="#0B0C0D" stroke="{PC_EDGE}" stroke-width="2"/>')
+    o.append(
+        f'<path d="M{bx - 6.8} {cy - 6.5}a9.6 9.6 0 1 0 13.6 0M{bx} {cy - 11.5}v10" fill="none" stroke="{POWER}" stroke-width="3" stroke-linecap="round"/>'
+    )
+    o.append("</g>")
+    return "".join(o)
+
+
 def port(x, y, number, blink_class):
     """An RJ45 jack, 54 wide and 42 tall, with link and activity lights."""
     w, h = 54, 42
@@ -175,7 +238,7 @@ def build():
     groups_desc = "; ".join(f"{g}: {', '.join(p)}" for g, p in GROUPS)
     o.append(f'<title id="t">{NAME}: {ROLE}</title>')
     o.append(
-        f'<desc id="d">A teal rack unit labelled {NAME}, above a patch panel whose ports are labelled with the tools he works with. {groups_desc}.</desc>'
+        f'<desc id="d">A teal rack unit labelled {NAME}, with a small black mini PC standing in a bay on its right, above a patch panel whose ports are labelled with the tools he works with. {groups_desc}.</desc>'
     )
     o.append(
         "<style>"
@@ -192,11 +255,14 @@ def build():
         "</style>"
     )
 
+    o.append(DEFS)
+
     # ---- chassis
-    o.append(rect(0, 0, W, H, CHASSIS, 7))
+    o.append(rect(0, 0, W, H, "url(#ch)", 7))
     o.append(rect(0, U1_H, W, SEAM, CHASSIS_DEEP))
     for y0 in (0, U2_Y):
         o.append(rect(8, y0 + 1.5, W - 16, 1.5, EDGE_LIGHT, 0, ' opacity=".7"'))
+    unit1_at = len(o)
     # ears
     o.append(f'<path fill="{CHASSIS_DARK}" d="M7 0h{EAR - 7}v{H}h-{EAR - 7}a7 7 0 0 1-7-7v-{H - 14}a7 7 0 0 1 7-7z"/>')
     o.append(f'<path fill="{CHASSIS_DARK}" d="M{W - EAR} 0h{EAR - 7}a7 7 0 0 1 7 7v{H - 14}a7 7 0 0 1-7 7h-{EAR - 7}z"/>')
@@ -205,48 +271,46 @@ def build():
         for cy in (34, U1_H - 34, U2_Y + 40, H - 40):
             o.append(screw(cx, cy))
 
-    # ---- unit 1: the server, labelled by its owner
+    # ---- unit 1: labelled by its owner, with the real server in a bay
+    o1 = []
     left = EAR + 34
-    name_size = 52
+    right = W - EAR - 34
+    name_size = 46
     name_w = text_width("semi-600", NAME, name_size)
-    o.append(
+    o1.append(
         tape(
-            left, 28, name_w + 44, 70, -0.8,
-            text("semi-600", NAME, name_size, left + 22, 28 + 53, INK),
+            left, 33, name_w + 40, 62, -0.8,
+            text("semi-600", NAME, name_size, left + 20, 33 + 47, INK),
         )
     )
+    # the role tape sits beside the bay, so shrink the text until it clears it
     role_size = 19.5
+    while text_width("semi-500", ROLE, role_size) + 28 > name_w + 40:
+        role_size -= 0.25
     role_w = text_width("semi-500", ROLE, role_size)
-    o.append(
+    o1.append(
         tape(
             left + 6, 108, role_w + 28, 31, 0.5,
             text("semi-500", ROLE, role_size, left + 20, 108 + 21.5, INK),
         )
     )
 
-    right = W - EAR - 34
-    o.append(text("cond-600", HOST, 30, right, 62, SILK, "end", 0.4))
-    o.append(text("cond-500", HOST_SPEC, 15.5, right, 85, SILK_DIM, "end", 0.3))
-    # light legend, right-aligned
-    lx = right
-    for label, colour in (("activity", AMBER), ("link", GREEN)):
-        lw = text_width("cond-500", label, 15.5, 0.3)
-        o.append(text("cond-500", label, 15.5, lx, 126, SILK, "end", 0.3))
-        lx -= lw + 8
-        o.append(rect(lx - 11, 116, 11, 5, colour, 1.2))
-        lx -= 11 + 22
+    # the bay: a cut-out in the faceplate with the mini PC standing in it
+    pc_w = right - (left + name_w + 40) - 44
+    pc_h = pc_w * PC_H / PC_W
+    bay_x, bay_y, bay_w, bay_h = right - pc_w - 12, 22, pc_w + 24, pc_h + 15
+    o1.append(rect(bay_x - 1.5, bay_y - 1.5, bay_w + 3, bay_h + 3, CHASSIS_DEEP, 6.5))
+    o1.append(rect(bay_x, bay_y, bay_w, bay_h, RECESS, 5))
+    o1.append(rect(bay_x + 14, bay_y + bay_h - 4, bay_w - 28, 4, "#000", 0, ' opacity=".5"'))
+    o1.append(mini_pc(right - pc_w, bay_y + 9, pc_w))
 
-    # vent slots between the labels and the host name
-    vent_x0 = left + name_w + 44 + 52
-    vent_x1 = right - text_width("cond-600", HOST, 30, 0.4) - 52
-    slot_w, slot_gap = 34, 10
-    count = int((vent_x1 - vent_x0 + slot_gap) // (slot_w + slot_gap))
-    if count > 0:
-        span = count * slot_w + (count - 1) * slot_gap
-        start = vent_x0 + (vent_x1 - vent_x0 - span) / 2
-        for row in range(6):
-            for i in range(count):
-                o.append(rect(start + i * (slot_w + slot_gap), 40 + row * 14, slot_w, 6, CHASSIS_DEEP, 3))
+    # host name silkscreened under the bay
+    ty = bay_y + bay_h + 27
+    host_w = text_width("cond-600", HOST, 22, 0.4)
+    o1.append(text("cond-600", HOST, 22, right, ty, SILK, "end", 0.4))
+    o1.append(text("cond-500", HOST_SPEC, 15.5, right - host_w - 14, ty, SILK_DIM, "end", 0.3))
+
+    o[unit1_at:unit1_at] = o1
 
     # ---- unit 2: the patch panel
     inner_x, inner_w = EAR + 34, W - 2 * (EAR + 34)
