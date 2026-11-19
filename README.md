@@ -1,4 +1,4 @@
-<img src="assets/rack.svg" width="100%" alt="Abdulrehman Ajmal. Ships products, runs a homelab, reads about rockets. A drawing of a rack unit with a small black mini PC in a bay, above a patch panel with one port per tool: React, TypeScript, Next.js, Ionic, Python, Django, FastAPI, Hasura, PostgreSQL, GraphQL, Redis, LLM agents, Docker, Linux, Traefik and Dokploy." />
+<img src="assets/banner.svg" width="100%" alt="Abdulrehman Ajmal. Ships products, runs a homelab, reads about rockets." />
 
 I'm a full-stack engineer in Pakistan. I work two engineering jobs, go to the gym after them, and then come home to a mini PC I named slowserver.
 
@@ -8,47 +8,47 @@ Almost all of this code lives in private repositories, so here are the pictures 
 
 ## Things I've shipped
 
-<table>
-<tr>
-<td colspan="2">
-<h3>Clinical reporting and lab management platform</h3>
-<p>Two years and 900+ of my commits on a multi-site platform for respiratory and sleep labs. It follows a patient from referral and waitlist through booking, rostering and testing to the finished clinical report, then delivers the result to the referring doctor over HL7. I also worked on the accreditation module, which tracks documents, training, audits and corrective actions. The client's name is withheld at their request.</p>
-<p><sub>React · TypeScript · MobX · Apollo GraphQL · AG Grid · Flask · Hasura · PostgreSQL</sub></p>
-</td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/work/clinical-platform-dashboard.jpg" alt="Clinic dashboard showing appointments this week, waiting lists, lab capacity, lab utilisation and a 30-day clinic performance chart." /></td>
-<td width="50%"><img src="assets/work/clinical-platform-scheduling-accreditation.jpg" alt="Two screens: a sleep lab booking view with rostering per bed, and an accreditation overview with compliance scores and an events calendar." /></td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<img src="assets/work/siparadigm-diagnostics-app.jpg" alt="Two phone screens from the siParadigm app: a list of diagnostic cases with their report status, and a kit order being tracked through delivery." />
-<h3><a href="https://carteblanche.tech/case-studies/siparadigm">siParadigm</a></h3>
-<p>An iOS and Android app for a molecular diagnostics lab. Doctors track cases and download reports, order sample kits and follow the FedEx delivery. The company had shelved two earlier attempts; this one was in production in two months. No patient data is stored on the phone.</p>
-<p><sub>React · TypeScript · Ionic · Capacitor · React Aria · Tailwind</sub></p>
-</td>
-<td width="50%" valign="top">
-<img src="assets/work/nowii-rewards-app.jpg" alt="A hand holding a phone showing the Nowii home screen: 227 travel tokens, a Bronze tier, and discount offers from partner merchants." />
-<h3><a href="https://carteblanche.tech/case-studies/nowii">Nowii Rewards</a></h3>
-<p>A rewards app for a London startup that pays commuters in tokens for travelling green. You earn tokens, climb tiers and spend them on discounts with partner merchants, and the app shows the CO₂ you saved along the way. The MVP launched in three months.</p>
-<p><sub>React · Ionic · TypeScript · Tailwind · Django · PostgreSQL · Celery · AWS</sub></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<img src="assets/work/public-editor-ai-annotation.jpg" alt="Two Public Editor screens: an annotation training task where a reader labels quoted sources in an article, and the public article explorer showing a credibility score of 82." />
-<h3><a href="https://carteblanche.tech/case-studies/public-editor">Public Editor</a></h3>
-<p>A platform that scores how credible a news article is. Twelve Claude agents on Amazon Bedrock read each article for sourcing, reasoning, language and evidence, so an analysis that took days now takes minutes. It also has a training game for human annotators and a browser extension for annotating articles in place.</p>
-<p><sub>React · Next.js · TypeScript · D3 · Django · PostgreSQL · Amazon Bedrock · Docker</sub></p>
-</td>
-<td width="50%" valign="top">
-<img src="assets/work/hirecinch-ats.jpg" alt="Two HireCinch screens: a multi-step form for creating a job posting, and a candidate profile with an interview scorecard." />
-<h3><a href="https://carteblanche.tech/case-studies/hirecinch">HireCinch</a></h3>
-<p>A multi-tenant applicant tracking system for startups and small companies. It parses and screens resumes with AI, and gives each team its own hiring pipeline, application forms, scorecards, interview scheduling and email. The MVP was live in eight weeks.</p>
-<p><sub>Next.js · React · TypeScript · Tailwind · Django · PostgreSQL · Celery · Redis · AWS</sub></p>
-</td>
-</tr>
-</table>
+### Clinical reporting and lab management platform
+
+Two years and 900+ of my commits on a multi-site platform for respiratory and sleep labs. It follows a patient from referral and waitlist through booking, rostering and testing to the finished clinical report, then delivers the result to the referring doctor over HL7. I also worked on the accreditation module, which tracks documents, training, audits and corrective actions. The client's name is withheld at their request.
+
+<sub>React · TypeScript · MobX · Apollo GraphQL · AG Grid · Flask · Hasura · PostgreSQL</sub>
+
+<img src="assets/work/clinical-platform-dashboard.jpg" width="100%" alt="Clinic dashboard showing appointments this week, waiting lists, lab capacity, lab utilisation and a 30-day clinic performance chart." />
+
+<img src="assets/work/clinical-platform-scheduling-accreditation.jpg" width="100%" alt="Two screens: a sleep lab booking view with rostering per bed, and an accreditation overview with compliance scores and an events calendar." />
+
+### [siParadigm](https://carteblanche.tech/case-studies/siparadigm)
+
+An iOS and Android app for a molecular diagnostics lab. Doctors track cases and download reports, order sample kits and follow the FedEx delivery. The company had shelved two earlier attempts; this one was in production in two months. No patient data is stored on the phone.
+
+<sub>React · TypeScript · Ionic · Capacitor · React Aria · Tailwind</sub>
+
+<img src="assets/work/siparadigm-diagnostics-app.jpg" width="100%" alt="Two phone screens from the siParadigm app: a list of diagnostic cases with their report status, and a kit order being tracked through delivery." />
+
+### [Nowii Rewards](https://carteblanche.tech/case-studies/nowii)
+
+A rewards app for a London startup that pays commuters in tokens for travelling green. You earn tokens, climb tiers and spend them on discounts with partner merchants, and the app shows the CO₂ you saved along the way. The MVP launched in three months.
+
+<sub>React · Ionic · TypeScript · Tailwind · Django · PostgreSQL · Celery · AWS</sub>
+
+<img src="assets/work/nowii-rewards-app.jpg" width="100%" alt="A hand holding a phone showing the Nowii home screen: 227 travel tokens, a Bronze tier, and discount offers from partner merchants." />
+
+### [Public Editor](https://carteblanche.tech/case-studies/public-editor)
+
+A platform that scores how credible a news article is. Twelve Claude agents on Amazon Bedrock read each article for sourcing, reasoning, language and evidence, so an analysis that took days now takes minutes. It also has a training game for human annotators and a browser extension for annotating articles in place.
+
+<sub>React · Next.js · TypeScript · D3 · Django · PostgreSQL · Amazon Bedrock · Docker</sub>
+
+<img src="assets/work/public-editor-ai-annotation.jpg" width="100%" alt="Two Public Editor screens: an annotation training task where a reader labels quoted sources in an article, and the public article explorer showing a credibility score of 82." />
+
+### [HireCinch](https://carteblanche.tech/case-studies/hirecinch)
+
+A multi-tenant applicant tracking system for startups and small companies. It parses and screens resumes with AI, and gives each team its own hiring pipeline, application forms, scorecards, interview scheduling and email. The MVP was live in eight weeks.
+
+<sub>Next.js · React · TypeScript · Tailwind · Django · PostgreSQL · Celery · Redis · AWS</sub>
+
+<img src="assets/work/hirecinch-ats.jpg" width="100%" alt="Two HireCinch screens: a multi-step form for creating a job posting, and a candidate profile with an interview scorecard." />
 
 ## Agents that pick up the phone
 
@@ -64,7 +64,7 @@ Under both sits a multi-tenant Django API that keeps a read-only mirror of the c
 
 <img src="assets/work/slowserver-homelab-dashboard.jpg" width="100%" alt="The slowserver.net dashboard: an HP Elite Mini 600 G9 online for 28 days with nine healthy services, network speed, weather in Lahore and a feed from r/homelab." />
 
-The rack at the top is a drawing. The server is real. [slowserver.net](https://slowserver.net) is an HP Elite Mini 600 G9 at home that works as my own small cloud, and I tinker with it far more than I should.
+[slowserver.net](https://slowserver.net) is an HP Elite Mini 600 G9 at home that works as my own small cloud, and I tinker with it far more than I should.
 
 | Layer | What's there |
 | :--- | :--- |
