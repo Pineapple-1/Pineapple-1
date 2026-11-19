@@ -1,15 +1,17 @@
-<img src="assets/banner.svg" width="100%" alt="Glowing diagonal strokes on a black ground, like a radio waterfall plot. A row of identical rising chirps, then two falling ones, then two rows of chirps that each start at a different height: one chirp for every letter of the name Abdulrehman Ajmal." />
+### Today
 
-***Self-portrait as a LoRa packet***, 2026<br>
-<sub>Chirps on a dark ground. The top row is the preamble a LoRa radio sends before it speaks. The two rows under it are my name, one chirp per letter: the later the letter in the alphabet, the higher the chirp starts. The <a href="scripts/build_banner.py">script that draws it</a> is in this repo.</sub>
+- [x] Job one
+- [x] Job two
+- [x] Gym
+- [x] Break the server at home
+- [x] Fix the server at home
+- [ ] Sleep
+- [ ] Build a pirate radio network
+- [ ] Go to space
 
----
+I'm Abdulrehman. This is where I hang the things I make. Most of the code is private, so what's on the walls is pictures.
 
-I'm Abdulrehman. This is where I hang the things I make.
-
-Most of the code is in private collections, so what's on the walls is pictures. Walk around.
-
-## Room 1: Commissions
+## Commissions
 
 <img src="assets/work/clinical-platform-dashboard.jpg" width="100%" alt="Clinic dashboard showing appointments this week, waiting lists, lab capacity, lab utilisation and a 30-day clinic performance chart." />
 
@@ -56,9 +58,9 @@ A tool that reads a news article and tells you how far to trust it. Twelve AI ag
 
 An applicant tracking system for small companies: hiring pipelines, application forms, scorecards, and AI that reads the resumes first.
 
-## Room 2: Things that talk
+## Things that talk
 
-There is nothing to hang in this room. The pieces are voices.
+Nothing to hang here. The pieces are voices.
 
 ```mermaid
 flowchart LR
@@ -79,7 +81,7 @@ Call a property developer's number and an agent answers. A new caller hears abou
 
 The same assistant, in text. It came first, and the voice grew out of it.
 
-## Room 3: The machine at home
+## The machine at home
 
 <img src="assets/work/slowserver-homelab-dashboard.jpg" width="100%" alt="The slowserver.net dashboard: an HP Elite Mini 600 G9 online for 28 days with nine healthy services, network speed, weather in Lahore and a feed from r/homelab." />
 
@@ -97,11 +99,11 @@ Smaller things, some unfinished.
 - **[Invisibility cloak](https://github.com/Pineapple-1/Invisiblity-cloak).** Hold up a cloth and disappear behind it, with a webcam and OpenCV. From when I was learning computer vision.
 - **[Holistics](https://github.com/Pineapple-1/holistics).** Live tracking of a body, a face and two hands. Same period.
 
-## The reading room
+## Tabs I have open
 
 What I read about when nobody is paying me.
 
-- **Radio and mesh networks.** LoRa and Meshtastic, which is where the picture at the top comes from. I want to build my own slightly piratical off-grid network.
+- **Radio and mesh networks.** LoRa and Meshtastic. I want to build my own slightly piratical off-grid network.
 - **Running AI at home.** Deploying models locally, how people stack Mac Studios into one machine, and what NVLink does for stacked GPUs.
 - **How chips are made.** EUV lithography, the nanoimprint machines Canon is building to get around it, and further down, how a FET actually switches.
 - **Rockets.** SpaceX and Starship at one end, hobby rockets at the other.
