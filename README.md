@@ -2,14 +2,28 @@
 
 - [x] Job one
 - [x] Job two
-- [x] Gym
+- [x] Gym (the one place I lift things without Docker)
 - [x] Break the server at home
+- [x] Tell the family the internet is "under maintenance"
 - [x] Fix the server at home
-- [ ] Sleep
+- [x] Teach a human the Italian Game
+- [x] Teach a robot to answer the phone
+- [ ] Sleep (moved to tomorrow, again)
 - [ ] Build a pirate radio network
 - [ ] Go to space
 
-I'm Abdulrehman. This is where I hang the things I make. Most of the code is private, so what's on the walls is pictures.
+## Welcome to the gallery
+
+I'm Abdulrehman. By day I build software for respiratory and sleep labs. By evening I teach AI agents to answer the phone politely. By night I run a small server in my house that streams films to five people who believe the internet simply works.
+
+Most of my code is private, so this place is a gallery rather than a warehouse: what's on the walls is pictures. Entry is free. Please do not touch the server. I already did, and that is why it was down.
+
+A few things to know before you walk around:
+
+- I think in years and change plans in minutes.
+- I teach chess, and I lose to my own opening trainer more often than I would like.
+- If a thing can be self-hosted, I will self-host it, and then write a wiki about what went wrong.
+- The to-do list above is real. Sleep, pirate radio and space are running slightly behind schedule.
 
 ## Commissions
 
