@@ -1,16 +1,24 @@
 ### Today
 
-- [x] Job one
-- [x] Job two
-- [x] Gym (the one place I lift things without Docker)
-- [x] Break the server at home
-- [x] Tell the family the internet is "under maintenance"
-- [x] Fix the server at home
-- [x] Teach a human the Italian Game
-- [x] Teach a robot to answer the phone
-- [ ] Sleep (moved to tomorrow, again)
-- [ ] Build a pirate radio network
-- [ ] Go to space
+```
+  START
+    |
+    ●  Job one
+    ●  Job two
+    ●  Gym
+    ●  Break the server at home
+    ●  Tell the family the internet is "under maintenance"
+    ●  Fix the server at home
+    ●  Teach a robot to answer the phone
+    |
+    ▶  I am here
+    |
+    ○  Sleep (moved to tomorrow, again)
+    ○  Build a pirate radio network
+    ○  Go to space
+    |
+▚▚▚ FINISH ▚▚▚
+```
 
 ## Welcome to the gallery
 
@@ -23,7 +31,7 @@ A few things to know before you walk around:
 - I think in years and change plans in minutes.
 - I teach chess, and I lose to my own opening trainer more often than I would like.
 - If a thing can be self-hosted, I will self-host it, and then write a wiki about what went wrong.
-- The to-do list above is real. Sleep, pirate radio and space are running slightly behind schedule.
+- The track above is real. Sleep, pirate radio and space are still a few laps away.
 
 ## Commissions
 
