@@ -24,8 +24,6 @@
 
 I'm Abdulrehman. By day I build software for respiratory and sleep labs. By evening I teach AI agents to answer the phone politely. By night I run a small server in my house that streams films to five people who believe the internet simply works.
 
-Most of my code is private, so this place is a gallery rather than a warehouse: what's on the walls is pictures. Entry is free. Please do not touch the server. I already did, and that is why it was down.
-
 A few things to know before you walk around:
 
 - I think in years and change plans in minutes.
@@ -82,16 +80,9 @@ An applicant tracking system for small companies: hiring pipelines, application 
 
 ## Things that talk
 
-Nothing to hang here. The pieces are voices.
+The pieces are voices, so what hangs here is a transcript of one.
 
-```mermaid
-flowchart LR
-    A([Someone calls]) --> B[Twilio]
-    B --> C[Voice agent<br/>ElevenLabs]
-    C -- tools --> D[Django backend]
-    D --> E[(Mirror of<br/>Salesforce)]
-    F([Someone texts<br/>on WhatsApp]) --> D
-```
+<img src="assets/work/voice-agent-transcript.jpg" width="100%" alt="A call transcript in the agent console: the voice agent looks up consultation times, tells a caller who has gone quiet to take their time, then switches to the customer care side when the caller asks about their money." />
 
 **Voice agent**, 2025 to now<br>
 <sub>Twilio, ElevenLabs, Django, Salesforce</sub>
