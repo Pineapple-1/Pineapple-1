@@ -6,7 +6,6 @@
     ●  Job one
     ●  Job two
     ●  Gym
-    ●  Break the server at home
     ●  Tell the family the internet is "under maintenance"
     ●  Fix the server at home
     ●  Teach a robot to answer the phone
